@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "646966713278",
+    "project_id": "c-linked",
+    "storage_bucket": "c-linked.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646966713278:android:2bf1a3d9a78b4cc07cb7ef",
+        "android_client_info": {
+          "package_name": "com.example.c_linked"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASEDadhDzD63UAyyPZmGiBdmcMfQDQ5_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
