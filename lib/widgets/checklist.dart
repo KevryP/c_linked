@@ -49,11 +49,12 @@ class CheckListState extends State<CheckList> {
     return ElevatedButton(
       onPressed: () => {
         showDialog(
-          context: context,
-          builder: (BuildContext context) => NewTaskDialog(
-            addTask: addTask,
-          ),
-        )
+            context: context,
+            builder: (BuildContext context) => Center(
+                  child: NewTaskDialog(
+                    addTask: addTask,
+                  ),
+                ))
       },
       child: const Icon(Icons.add),
     );

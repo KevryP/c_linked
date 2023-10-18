@@ -13,7 +13,10 @@ class NewTaskDialogState extends State<NewTaskDialog> {
 
   @override
   Widget build(BuildContext context) {
-    return newTaskDialog(context);
+    return SizedBox(
+      height: 300,
+      child: newTaskDialog(context),
+    );
   }
 
   AlertDialog newTaskDialog(context) {
