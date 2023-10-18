@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'widgets/profile.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +14,7 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.black38,
         body: Center(
-          child: Text("Hello!"),
+          child: Profile(),
         ),
       ),
     );
