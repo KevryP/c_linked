@@ -1,5 +1,7 @@
 import 'package:c_linked/widgets/checklist.dart';
+import 'package:c_linked/widgets/login.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -10,6 +12,7 @@ class Profile extends StatelessWidget {
       child: Column(
         children: [
           dailyChecklistCard(),
+          signOutBtn(context),
         ],
       ),
     );
@@ -27,5 +30,17 @@ class Profile extends StatelessWidget {
         ]),
       ),
     );
+  }
+
+  ElevatedButton signOutBtn(context) {
+    return ElevatedButton(
+        onPressed: () => {
+              FirebaseAuth.instance.signOut().then((value) => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const LoginPage(),
+                  )))
+            },
+        child: const Text("Sign Out"));
   }
 }
